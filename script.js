@@ -46,11 +46,16 @@ function clearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
+// Function to enable the show copy button
+function enableShowCopy() {
+    document.getElementById('show-copy').disabled = false;
+}
+
 // Add event listeners
 canvas.addEventListener('mousedown', setPos);
 canvas.addEventListener('mouseenter', setPos);
 canvas.addEventListener('mousemove', draw);
 
-// Get the clear button and add an event listener
-var clearButton = document.getElementById('clear-signature');
-clearButton.addEventListener('click', clearCanvas);
+// Get the buttons and add event listeners
+document.getElementById('clear-signature').addEventListener('click', clearCanvas);
+document.getElementById('save').addEventListener('click', enableShowCopy);

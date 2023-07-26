@@ -41,7 +41,16 @@ function draw(e) {
     ctx.stroke();
 }
 
+// Function to clear the canvas
+function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
 // Add event listeners
 canvas.addEventListener('mousedown', setPos);
 canvas.addEventListener('mouseenter', setPos);
 canvas.addEventListener('mousemove', draw);
+
+// Get the clear button and add an event listener
+var clearButton = document.getElementById('clear-signature');
+clearButton.addEventListener('click', clearCanvas);

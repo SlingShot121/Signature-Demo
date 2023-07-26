@@ -1,0 +1,26 @@
+body {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.form-control {
+    background-color: #495057;
+    color: #ffffff;
+}
+
+.signature-pad {
+    width: 30vw;
+    border: 1px solid #ffffff;
+    height: 200px;
+}
+
+.form-input {
+    width: 30vw;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+}
